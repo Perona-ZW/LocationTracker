@@ -23,6 +23,7 @@ This project requires up-to-date versions of the Android build tools and the And
 ## My focus
 
 The most important thing here is calculate distance, and I considered a more complicated function that would take into account the height of the two places while comparing latitude and longitude, but I was worried that this would instead be wrong, plus it might make things too complicated, and I ended up choosing to use an existing function to calculate distance.
+
 It was a very simple app and I didn't think too much about it. In the end it wasn't anything over the top.
 
 ## Decisions when developing
@@ -30,9 +31,11 @@ It was a very simple app and I didn't think too much about it. In the end it was
 Why Android - I had implemented something similar in the Android App and had a little memory of how it was done.
 
 Before getting started, I searched Stack Overflow for some examples.
+
 At first I was going to write a simple, UI-less interface that would show latitude and longtitude and calculate distance. but in the process I felt it was a bit monotonous and I recreated a new Map project to try out in Map.
 
 In the process of writing the code, I basically didn't encounter any very difficult places. In `android.location.Location` there is the most crucial point I need: the distanceTo() function, after realising this point I just try to get and compare the old and new locations and the distance between them. If it's not more than 10m I don't update the stored location information, if it is I use Toast to show the distance moved and update the oldLocation data.
+
 I considered some other functions such as turning off and on tracking, but since the project didn't require it, I didn't implement this part.
 
 ## Copied code, references and 3rd party libraries
@@ -41,6 +44,7 @@ I used Google API and relevant libraries.
 For location authority, insted of using several lines to do so, I copied the PermissionUtils class in this project to make it more effecient: https://github.com/googlemaps/android-samples/tree/master/ApiDemos/java/app/src/gms/java/com/example/mapdemo
 
 ## Time
+
 I spent around 10 hrs in total developing this project because I did another one without Google map first, I thought that was too straight, then decided to implement a map, then it takes a little bit long time.
 
 ## Other - when you running
