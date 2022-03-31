@@ -13,12 +13,9 @@ This project requires up-to-date versions of the Android build tools and the And
 ## How to get an Google API Key
 
 1. Follow this guide to get your Google API Key: https://developers.google.com/maps/documentation/android-sdk/get-api-key
-2. Open the project, go to ./app/manifests/AndroidManifest.xml, line 24, you will see these code:
-
-
-`<meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDtJZLIO9bMzd1gQ9EZTEjINI_dJTn1sOA" />
+2. Open the project, go to ./app/src/main/AndroidManifest.xml, line 26, you will see these code:
+            
+            android:value="AIzaSyDtJZLIO9bMzd1gQ9EZTEjINI_dJTn1sOA"
             
 3. Change the exiting value to your Key
 4. Build and run
