@@ -19,7 +19,7 @@ This project requires up-to-date versions of the Android build tools and the And
 <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDtJZLIO9bMzd1gQ9EZTEjINI_dJTn1sOA" />
-            ```
+            ``````
 3. Change the exiting value to your Key
 4. Build and run
 
