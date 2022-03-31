@@ -16,7 +16,7 @@ This project requires up-to-date versions of the Android build tools and the And
 2. Open the project, go to ./app/manifests/AndroidManifest.xml, line 24, you will see these code:
 
 
-<meta-data
+`<meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDtJZLIO9bMzd1gQ9EZTEjINI_dJTn1sOA" />
             
